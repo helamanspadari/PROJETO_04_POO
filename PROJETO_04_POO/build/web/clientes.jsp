@@ -13,7 +13,7 @@
     <body>
         <%@include file="WEB-INF/header.jspf"%>
         <h3>Cadastro de Clientes</h3>
-        <div>
+        <div class="form">
             <fieldset>
                 <legend>Novo Cliente</legend>
                 <form>
@@ -26,6 +26,23 @@
                     <input type="submit" name="incluir" value="Incluir"/>
                 </form>
             </fieldset>
+        </div>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>Índice</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>RG</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+                <!-- for(int i=0; i<.getContatos().size(); i++){%>
+                 c = Database.getContatos().get(i);-->
+                
+
+            </table>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>

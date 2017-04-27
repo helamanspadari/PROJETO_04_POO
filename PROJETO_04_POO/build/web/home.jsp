@@ -13,8 +13,13 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div>
-            
+        <div id="mid">
+            <ul>
+                <p>Integrantes do Grupo</p>
+                <li>Helaman Spadari</li>
+                <li>Tiago Farias</li>
+                <li>Thiago Morais</li>
+            </ul>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>
