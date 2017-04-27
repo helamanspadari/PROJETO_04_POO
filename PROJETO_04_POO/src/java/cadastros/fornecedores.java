@@ -10,7 +10,11 @@ public class fornecedores {
 
     public void setFornecedores(String nome, String razao, String cnpj, String email, String telefone, String endereco){
         this.setNome(nome);
-        
+        this.setRazao(razao);
+        this.setCnpj(cnpj);
+        this.setEmail(email);
+        this.setTelefone(telefone);
+        this.setEndereco(endereco);
     }
     public String getNome() {
         return nome;
