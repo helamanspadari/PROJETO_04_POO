@@ -12,6 +12,10 @@
         <title>HOME POO - 04</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file="WEB-INF/header.jspf"%>
+        <div>
+            
+        </div>
+        <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>

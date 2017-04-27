@@ -12,7 +12,7 @@
         <title>FORNECEDORES</title>
     </head>
     <body>
-        <h2>POO - 04</h2>
+        <%@include file="WEB-INF/header.jspf"%>
         <h3>Cadastro de Fornecedores</h3>
         <div>
             <fieldset>

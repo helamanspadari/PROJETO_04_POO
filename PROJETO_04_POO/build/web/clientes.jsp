@@ -11,7 +11,7 @@
         <title>Home PROJETO 04</title>
     </head>
     <body>
-        <h2>POO</h2>
+        <%@include file="WEB-INF/header.jspf"%>
         <h3>Cadastro de Clientes</h3>
         <div>
             <fieldset>
@@ -27,5 +27,6 @@
                 </form>
             </fieldset>
         </div>
+        <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
