@@ -28,6 +28,23 @@
                 </form>
             </fieldset>
         </div>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>Índice</th>
+                    <th>Nome</th>
+                    <th>Razão Social</th>
+                    <th>CNPJ</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+                <!-- for(int i=0; i<.getContatos().size(); i++){%>
+                 c = Database.getContatos().get(i);-->
+                
+
+            </table>
+        </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
