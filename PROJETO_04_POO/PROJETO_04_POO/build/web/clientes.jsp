@@ -8,33 +8,32 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home PROJETO 04</title>
+        <title>Cadastro de Clientes - POO_04</title>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
         <h3>Cadastro de Clientes</h3>
         
-            <div class="form">
-                <fieldset>
-                    <legend><b>Novo Cliente</b></legend>
-                    <form>
-                        Nome: <input type="text" name="nome"/>
-                        <br/>
-                        CPF: <input type="text" name="cpf"/>
-                        <br/>
-                        RG: <input type="text" name="rg"/>
-                        <br/>
-                        E-mail: <input type="text" name="email"/>
-                        <br/>
-                        Telefone: <input type="text" name="telefone"/>
-                        <br/>
-                        Endereço: <input type="text" name="endereco"/>
-                        <br/><br/>
-                        <input type="submit" name="incluir" value="Incluir"/>
-                        <br/>
-                    </form>
-                </fieldset>
-            </div>
+        <div class="form">
+            <fieldset>
+                <legend><b>Novo Cliente</b></legend>
+                <form>
+                Nome: <input type="text" name="nome"/>
+                <br/>
+                CPF: <input type="text" name="cpf"/>
+                <br/>
+                RG: <input type="text" name="rg"/>
+                <br/>
+                E-mail: <input type="text" name="email"/>
+                <br/>
+                Telefone: <input type="text" name="telefone"/>
+                <br/>
+                Endereço: <input type="text" name="endereco"/>
+                <br/><br/>
+                <input type="submit" name="incluir" value="Incluir"/>
+                <br/>
+                </form>
+            </fieldset>
         </div>
         <div class="tabelas">
             <center>
