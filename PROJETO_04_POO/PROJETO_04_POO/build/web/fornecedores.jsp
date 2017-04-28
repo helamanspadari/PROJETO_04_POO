@@ -13,23 +13,30 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div id="mid">
-            <h3>Cadastro de Fornecedores</h3>
-            <div>
-                <fieldset>
-                    <legend>Novo Fornecedor</legend>
-                    <form>
-                        Nome: <input type="text" name="nome"/><br/>
-                        Razão Social: <input type="text" name="cpf"/><br/>
-                        CNPJ: <input type="text" name="rg"/><br/>
-                        E-mail: <input type="text" name="email"/><br/>
-                        Telefone: <input type="text" name="telefone"/><br/>
-                        Endereço: <input type="text" name="endereco"/><br/>
-                        <input type="submit" name="incluir" value="Incluir"/>
-                    </form>
-                </fieldset>
-            </div>
-            <div>
+        <h3>Cadastro de Fornecedores</h3>
+        <div class="form">
+            <fieldset>
+                <legend>Novo Fornecedor</legend>
+                <form>
+                    Nome: <input type="text" name="nome"/>
+                    <br/>
+                    Razão Social: <input type="text" name="cpf"/>
+                    <br/>
+                    CNPJ: <input type="text" name="rg"/>
+                    <br/>
+                    E-mail: <input type="text" name="email"/>
+                    <br/>
+                    Telefone: <input type="text" name="telefone"/>
+                    <br/>
+                    Endereço: <input type="text" name="endereco"/>
+                    <br/><br/>
+                    <input type="submit" name="incluir" value="Incluir"/>
+                    <br/>
+                </form>
+            </fieldset>
+        </div>
+        <div class="tabelas">
+            <center>
                 <table border="1">
                     <tr>
                         <th>Índice</th>
@@ -45,7 +52,7 @@
 
 
                 </table>
-            </div>
+            </center>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>

@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <div id="header">
     <nav>
-        <h2>POO - 04</h2>
+        <h1>POO - 04</h1>
 	<ul>
             <li><a href="home.jsp" class="btn">Home</a></li>
             <li><a href="clientes.jsp" class="btn">Clientes</a></li>
