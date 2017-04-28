@@ -9,7 +9,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>FORNECEDORES</title>
+        <title>Cadastro de Fornecedore - POO_04</title>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
