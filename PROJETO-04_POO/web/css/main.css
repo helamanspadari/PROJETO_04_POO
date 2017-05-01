@@ -79,7 +79,7 @@ fieldset{
     border-style: circle;
     border-radius: 20px;
     margin-bottom: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20%;
     object-position: center;
     margin-top: 11.5%;
     text-align: center;
@@ -122,4 +122,9 @@ fieldset{
     background-image: -o-linear-gradient(top, #3cb0fd, #42d934);
     background-image: linear-gradient(to bottom, #3cb0fd, #42d934);
     text-decoration: none;
+}
+
+#fotos{
+   height: 50px;
+   width: 50px;
 }

@@ -9,16 +9,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="main.css"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastro de Fornecedores - POO_04</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf" %>
-        <h3>Cadastro de Fornecedor</h3>
+        <div class="container"><h3>Cadastro de Fornecedor</h3>
         <%
             ArrayList<Fornecedor> listFornecedor;
 
@@ -112,7 +109,7 @@
 
                 </div>
             </div> <!-- /#list -->
-
+</div>
             <div id="bottom" class="row">
                 <%@include file="WEB-INF/footer.jspf" %>
             </div> <!-- /#bottom -->
