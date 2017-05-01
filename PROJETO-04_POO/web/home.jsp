@@ -31,12 +31,12 @@
                     <div class="col-sm-3">
                         <h3>Felipe Oliveira</h3>
                         <img src="img/felipePoo.png" class="img-responsive" style="width:100%" alt="Thiago Morais">
-                        <h4>**********</h4>
+                        <h4>Cadastro de Clientes</h4>
                     </div>
                     <div class="col-sm-3">
                         <h3>Helaman Spadari</h3>
                         <img src="img/helamanPoo.png" class="img-responsive" style="width:100%" alt="Thiago Morais">
-                        <h4>********</h4>
+                        <h4>Criação de Classes</h4>
                     </div>
                     <div class="col-sm-3">
                         <h3>Tiago Farias</h3>
@@ -46,7 +46,7 @@
                     <div class="col-sm-3">
                         <h3>Thiago Morais</h3>
                         <img src="img/thiagoPoo.jpg" class="img-responsive" style="width:100%" alt="Thiago Morais">
-                        <h4>Home e layout</h4>
+                        <h4>Home e Layout</h4>
                     </div>
 
                 </div>
@@ -55,7 +55,7 @@
 
         <div class="container-fluid bg-3 text-center">    
 
-        </div><br><br>
+        </div>
 
 
 
