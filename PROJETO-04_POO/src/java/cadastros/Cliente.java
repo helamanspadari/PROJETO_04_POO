@@ -16,6 +16,7 @@ public class Cliente extends Pessoa implements ClienteInterface{
         this.setEmail(email);
         this.setTelefone(telefone);
         this.setEndereco(endereco);
+        
     }   
     
     public String getId(){
