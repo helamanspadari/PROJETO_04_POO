@@ -1,0 +1,24 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<fieldset>
+                   
+                    <form name="formFornecedor" id="formFornecedor" method="post">
+                        <div class="form-group col-md-4">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="form-control" id="nome" name="email">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" id="nome" name="telefone">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="nome" name="endereco">
+                        </div>

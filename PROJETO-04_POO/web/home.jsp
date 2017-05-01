@@ -7,11 +7,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>HOME POO - 04</title>
+        <title>Home - POO_04</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <%@include file="WEB-INF/header.jspf"%>
+        <%@include file="WEB-INF/header.jspf" %>
         <div id="mid">
             <h2>Grupo 05 - Trabalho de POO</h2>
             <hr>		
@@ -27,5 +34,7 @@
             </ul>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
