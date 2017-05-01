@@ -12,41 +12,47 @@
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastro de Fornecedores - POO_04</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
     </head>
     <body>
-        <%@include file="WEB-INF/header.jspf" %>
+        <%@include file="../WEB-INF/header.jspf" %>
         <h3>Cadastro de Fornecedor</h3>
         <%
-            ArrayList<Fornecedor> listFornecedor;
+            
+            ArrayList<Fornecedor> listFornecedor = new ArrayList<>();
 
-            String id = UUID.randomUUID().toString();
-
-            try {
-                String nome = request.getParameter("nome");
-                String razao = request.getParameter("razao");
-                String cnpj = request.getParameter("cnpj");
-                String email = request.getParameter("email");
-                String telefone = request.getParameter("telefone");
-                String endereco = request.getParameter("endereco");
-
-                Fornecedor f = new Fornecedor(id, nome, razao, cnpj, email, telefone, endereco);
-
-                listFornecedor = new ArrayList<>();
-
-                listFornecedor.add(f);
-
+            try {               
+                listFornecedor = Fornecedor.getListFornecedor();
             } catch (Exception e) {
-                throw new Exception("Falha ao salvar dados, por favor tente novamente");
+//                throw new Exception("Falha ao salvar dados, por favor tente novamente");
             }
         %>
 
         <div id="main" class="container-fluid">
             <div id="top" class="row">
-                <fieldset>
-                    <%@include file="WEB-INF/cadastro.jspf" %>
+                <fieldset>       
+                    <form name="formFornecedor" id="formFornecedor" method="post" action="new.jsp">
+                        <div class="form-group col-md-4">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="form-control" id="nome" name="email">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control phone" id="nome" name="telefone">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="nome" name="endereco">
+                        </div>
                         <div class="form-group col-md-4">
                             <label for="razao">Razão</label>
                             <input type="text" class="form-control" id="nome" name="razao">
@@ -87,9 +93,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <%
-                                for (Fornecedor f : listFornecedor) {
-                                    if (f.getNome() != null && f.getNome() != "") {
+                        <%
+                        if (listFornecedor != null) {
+                            for (Fornecedor f : listFornecedor) {
+                               
                             %>
                             <tr>
                                 <td><%= f.getNome()%></td>
@@ -100,13 +107,13 @@
                                 <td><%= f.getEndereco()%></td>
                                 <td class="actions">
                                     <a class="btn btn-warning btn-xs" href="#">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                                    <a class="btn btn-danger btn-xs"  href="${pageContext.request.contextPath}/fornecedor/delete.jsp?id=<%= f.getId() %>" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                                 </td>
                             </tr>
 
                         </tbody>
-                        <% }
-                            }
+                        <%  }
+                        }
                         %>
                     </table>
 
@@ -114,13 +121,13 @@
             </div> <!-- /#list -->
 
             <div id="bottom" class="row">
-                <%@include file="WEB-INF/footer.jspf" %>
+                <%@include file="../WEB-INF/footer.jspf" %>
             </div> <!-- /#bottom -->
         </div>  <!-- /#main -->
 
 
 
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
     </body>
 </html>

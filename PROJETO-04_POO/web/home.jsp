@@ -34,7 +34,7 @@
             </ul>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
     </body>
 </html>

@@ -13,27 +13,44 @@
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastro de Clientes - POO_04</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
     </head>
     <body>
-        <%@include file="WEB-INF/header.jspf" %>
+        <%@include file="../WEB-INF/header.jspf" %>
         <h3>Cadastro de Cliente</h3>
         <div id="main" class="container-fluid">
             <div id="top" class="row">
-                <fieldset>
-                    <%@include file="WEB-INF/cadastro.jspf" %>
+                <fieldset>       
+                    <form name="formFornecedor" id="formFornecedor" method="post" action="new.jsp">
+                        <div class="form-group col-md-4">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="form-control" id="nome" name="email">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control phone" id="nome" name="telefone">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="nome" name="endereco">
+                        </div>
                         <div class="form-group col-md-4">
                             <label for="rg">RG</label>
                             <input type="text" class="form-control" id="nome" name="rg">
                         </div>
-
                         <div class="form-group col-md-4">
                             <label for="cpf">CPF</label>
                             <input type="text" class="form-control" id="nome" name="cpf">
                         </div>
-
                        
                         <br/><br/>
                         <div class="form-group col-md-12">
@@ -86,12 +103,11 @@
             </div> <!-- /#list -->
 
             <div id="bottom" class="row">
-                <%@include file="WEB-INF/footer.jspf" %>
+                <%@include file="../WEB-INF/footer.jspf" %>
             </div> <!-- /#bottom -->
         </div>  <!-- /#main -->
 
-        <%@include file="WEB-INF/footer.jspf"%>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
     </body>
 </html>

@@ -17,9 +17,10 @@ Barra de navegação
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="home.jsp">Home</a></li>
-                <li><a href="clientes.jsp">Clientes</a></li>
-                <li><a href="fornecedores.jsp">Fornecedores</a></li>
+                <li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
+                <!--<li><a href="${req.requestURI}/PROJETO-04_POO/cliente/view.jsp">Clientes</a></li>-->
+                <li><a href="${pageContext.request.contextPath}/cliente/view.jsp">Clientes</a></li>
+                <li><a href="${pageContext.request.contextPath}/fornecedor/view.jsp">Fornecedores</a></li>
 
             </ul>
         </div>
