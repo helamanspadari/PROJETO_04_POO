@@ -29,12 +29,14 @@
 
                             <div class="form-group col-md-4">
                                 <label for="email">E-mail</label>
-                                <input type="text" class="form-control" id="nome" name="email">
+                                <input type="text" placeholder="email@email.com" pattern="^[a-zA-Z0-9_\.-]{2,}@([A-Za-z0-9_-]{2,}\.)+[A-Za-z]{2,4}$"
+                                       class="form-control" id="nome" name="email">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control phone" id="nome" name="telefone">
+                                <input type="text" placeholder="(XX) XXXX-XXXX" pattern="^\(?\d{2}\d{4}[-\s]\d{4}$"
+                                       class="form-control phone" id="nome" name="telefone">
                             </div>
 
                             <div class="form-group col-md-4">
@@ -43,11 +45,11 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="rg">RG</label>
-                                <input type="text" class="form-control" id="nome" name="rg">
+                                <input type="text" placeholder="XXXXXXXXX" pattern="[0-9]{9}" class="form-control" id="nome" name="rg">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="cpf">CPF</label>
-                                <input type="text" class="form-control" id="nome" name="cpf">
+                                <input type="text" placeholder="XXXXXXXXXXX" pattern="[0-9]{11}" class="form-control" id="nome" name="cpf">
                             </div>
 
                             <br/><br/>
