@@ -42,26 +42,29 @@
 
                             <div class="form-group col-md-4">
                                 <label for="email">E-mail</label>
-                                <input type="text" class="form-control" id="email" name="email">
+                                <input type="text" placeholder="email@email.com"
+                                       pattern="^[a-zA-Z0-9_\.-]{2,}@([A-Za-z0-9_-]{2,}\.)+[A-Za-z]{2,4}$" 
+                                       class="form-control" id="email" name="email">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control phone" id="telefone" name="telefone">
+                                <input type="text" placeholder="(XX) XXXX-XXXX" pattern="^\(?\d{2}\d{4}[-\s]\d{4}$"
+                                       class="form-control phone" id="telefone" name="telefone">
                             </div>
 
                             <div class="form-group col-md-4">
-                                <label for="endereco">EndereÁo</label>
+                                <label for="endereco">Endere√ßo</label>
                                 <input type="text" class="form-control" id="endereco" name="endereco">
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="razao">Raz„o</label>
+                                <label for="razao">Raz√£o</label>
                                 <input type="text" class="form-control" id="razao" name="razao">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="cnpj">CNPJ</label>
-                                <input type="text" class="form-control" id="cnpj" name="cnpj">
+                                <input type="text" placeholder="XX.XXX.XXX|XXXX-ZZ" pattern="[0-9]{14}" class="form-control" id="cnpj" name="cnpj">
                             </div>
 
 
@@ -85,12 +88,12 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
-                                    <th>Raz„o Social</th>
+                                    <th>Raz√£o Social</th>
                                     <th>CNPJ</th>
                                     <th>E-mail</th>
                                     <th>Telefone</th>
-                                    <th>EndereÁo</th>
-                                    <th class="actions">AÁıes</th>
+                                    <th>Endere√ßo</th>
+                                    <th class="actions">A√ß√µes</th>
                                 </tr>
                             </thead>
                             <tbody>
