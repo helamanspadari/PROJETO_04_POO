@@ -12,7 +12,7 @@
         response.sendRedirect("view.jsp");
 
     } catch (Exception e) {
-        throw new Exception("Falha ao excluir fornecedor, por favor tente novamente");
+        throw new Exception("Falha ao excluir cliente, por favor tente novamente");
         
     }
 %>
