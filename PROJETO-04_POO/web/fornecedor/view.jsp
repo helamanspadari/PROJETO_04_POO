@@ -26,7 +26,7 @@
                 try {
                     listFornecedor = Fornecedor.getListFornecedor();
                 } catch (Exception e) {
-                    //                throw new Exception("Falha ao salvar dados, por favor tente novamente");
+                    throw new Exception("Falha ao salvar dados, por favor tente novamente");
                 }
             %>
 
@@ -37,36 +37,37 @@
                             <div class="form-group col-md-4">
                                 <label for="nome">Nome</label>
                                 <input type="text" class="form-control" id="nome" name="nome">
+                                <input type="hidden" name="id" id="id">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="email">E-mail</label>
-                                <input type="text" class="form-control" id="nome" name="email">
+                                <input type="text" class="form-control" id="email" name="email">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control phone" id="nome" name="telefone">
+                                <input type="text" class="form-control phone" id="telefone" name="telefone">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="endereco">Endereço</label>
-                                <input type="text" class="form-control" id="nome" name="endereco">
+                                <input type="text" class="form-control" id="endereco" name="endereco">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="razao">Razão</label>
-                                <input type="text" class="form-control" id="nome" name="razao">
+                                <input type="text" class="form-control" id="razao" name="razao">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="cnpj">CNPJ</label>
-                                <input type="text" class="form-control" id="nome" name="cnpj">
+                                <input type="text" class="form-control" id="cnpj" name="cnpj">
                             </div>
 
 
                             <br/><br/>
                             <div class="form-group col-md-12">
-                                <button type="submit" name="incluir" class="btn btn-primary" value="Incluir">Incluir</button>
+                                <button type="submit" name="salvar" class="btn btn-primary">Salvar</button>
                                 <a href="view.jsp" class="btn btn-default">Cancelar</a>
                             </div>
 
@@ -94,8 +95,8 @@
                             </thead>
                             <tbody>
                                 <%
-                                    if (listFornecedor != null) {
-                                        for (Fornecedor f : listFornecedor) {
+                                if (listFornecedor != null) {
+                                    for (Fornecedor f : listFornecedor) {
 
                                 %>
                                 <tr>
@@ -106,14 +107,15 @@
                                     <td><%= f.getTelefone()%></td>
                                     <td><%= f.getEndereco()%></td>
                                     <td class="actions">
-                                        <a class="btn btn-warning btn-xs" href="#">Editar</a>
+                                        <a class="btn btn-warning btn-xs" href="javascript:alterar('<%= f.getId() %>', '<%= f.getNome() %>', '<%= f.getRazao() %>', '<%= f.getCnpj() %>', '<%= f.getEmail() %>', '<%= f.getTelefone() %>', '<%= f.getEndereco() %>')">Editar</a>
                                         <a class="btn btn-danger btn-xs"  href="${pageContext.request.contextPath}/fornecedor/delete.jsp?id=<%= f.getId()%>" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                                     </td>
                                 </tr>
 
                             </tbody>
-                            <%  }
+                            <%  
                                 }
+                            }
                             %>
                         </table>
 
@@ -124,7 +126,24 @@
 
         <%@include file="../WEB-INF/footer.jspf" %>
 
-        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script> 
         <script src="scripts/bootstrap.min.js"></script>
+        <script>
+            
+            function alterar(id, nome, razao, cnpj, email, telefone, endereco){
+                $('#id').val(id);
+                $('#nome').val(nome);
+                $('#razao').val(razao);
+                $('#cnpj').val(cnpj);
+                $('#email').val(email);
+                $('#telefone').val(telefone);
+                $('#endereco').val(endereco);
+                
+                $('#formFornecedor').attr('action', 'edit.jsp');
+            }
+            
+        </script>
     </body>
 </html>

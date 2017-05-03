@@ -6,21 +6,30 @@
 <%
     ArrayList<Fornecedor> listFornecedor = new ArrayList<>();
 
-    String id = UUID.randomUUID().toString();
+    
 
     try {
-        String nome = request.getParameter("nome");
-        String razao = request.getParameter("razao");
-        String cnpj = request.getParameter("cnpj");
-        String email = request.getParameter("email");
-        String telefone = request.getParameter("telefone");
-        String endereco = request.getParameter("endereco");
-
-        Fornecedor f = new Fornecedor(id, nome, razao, cnpj, email, telefone, endereco);
-
-        Fornecedor.setListFornecedor(f);
+        String id       = (String)request.getParameter("id");
+        String nome     = (String)request.getParameter("nome");
+        String razao    = (String)request.getParameter("razao");
+        String cnpj     = (String)request.getParameter("cnpj");
+        String email    = (String)request.getParameter("email");
+        String telefone = (String)request.getParameter("telefone");
+        String endereco = (String)request.getParameter("endereco");
 
         listFornecedor = Fornecedor.getListFornecedor();
+        for(Fornecedor f : listFornecedor){
+            if(f.getId().equals(id)){
+                f.setId(id);
+                f.setNome(nome);
+                f.setRazao(razao);
+                f.setCnpj(cnpj);
+                f.setEmail(email);
+                f.setTelefone(telefone);
+                f.setEndereco(endereco);
+                break;
+            }
+        }
         
         response.sendRedirect("view.jsp");
 
