@@ -30,7 +30,7 @@
                 <div class="container">
                     <div class="col-sm-3">
                         <h3>Felipe Oliveira</h3>
-                        <img src="img/felipePoo.png" class="img-responsive" style="width:100%, border-radius: 40px;" alt="Thiago Morais">
+                        <img src="img/felipePoo.png" class="img-responsive" style="width:100%; border-radius: 40px;" alt="Thiago Morais">
                         <h4>Cadastro de Clientes</h4>
                     </div>
                     <div class="col-sm-3">

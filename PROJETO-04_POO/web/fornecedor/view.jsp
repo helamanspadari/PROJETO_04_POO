@@ -54,17 +54,17 @@
                             </div>
 
                             <div class="form-group col-md-4">
-                                <label for="endereco">Endere√ßo</label>
+                                <label for="endereco">EndereÁo</label>
                                 <input type="text" class="form-control" id="endereco" name="endereco">
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="razao">Raz√£o</label>
+                                <label for="razao">Raz„o</label>
                                 <input type="text" class="form-control" id="razao" name="razao">
                             </div>
 
                             <div class="form-group col-md-4">
                                 <label for="cnpj">CNPJ</label>
-                                <input type="text" placeholder="XX.XXX.XXX|XXXX-ZZ" pattern="[0-9]{14}" class="form-control" id="cnpj" name="cnpj">
+                                <input type="text" placeholder="XX.XXX.XXX.XXXX-ZZ" pattern="[0-9]{14}" class="form-control" id="cnpj" name="cnpj">
                             </div>
 
 
@@ -88,12 +88,12 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
-                                    <th>Raz√£o Social</th>
+                                    <th>Raz„o Social</th>
                                     <th>CNPJ</th>
                                     <th>E-mail</th>
                                     <th>Telefone</th>
-                                    <th>Endere√ßo</th>
-                                    <th class="actions">A√ß√µes</th>
+                                    <th>EndereÁo</th>
+                                    <th class="actions">AÁıes</th>
                                 </tr>
                             </thead>
                             <tbody>
