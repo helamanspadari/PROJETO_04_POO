@@ -3,12 +3,12 @@ package cadastros;
 import java.util.ArrayList;
 
 public class Cliente extends Pessoa implements ClienteInterface{
-    public  String id;
+    private  String id;
     private String cpf;
     private String rg;
     private static ArrayList<Cliente> listCliente;
     
-    public void Cliente(String id, String nome, String cpf, String rg, String email, String telefone, String endereco){
+    public Cliente(String id, String nome, String cpf, String rg, String email, String telefone, String endereco){
         this.setId(id);
         this.setNome(nome);
         this.setCpf(cpf);

@@ -49,12 +49,12 @@
 
                             <div class="form-group col-md-4">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" placeholder="(XX) XXXX-XXXX" pattern="^\(?\d{2}\d{4}[-\s]\d{4}$"
+                                <input type="text" placeholder="XXXX-XXXX" pattern="^\(?\d{4}[-\s]\d{4}$"
                                        class="form-control phone" id="telefone" name="telefone">
                             </div>
 
                             <div class="form-group col-md-4">
-                                <label for="endereco">EndereÃ§o</label>
+                                <label for="endereco">Endereço</label>
                                 <input type="text" class="form-control" id="endereco" name="endereco">
                             </div>
                             <div class="form-group col-md-4">
@@ -91,8 +91,8 @@
                                     <th>Rg</th>
                                     <th>E-mail</th>
                                     <th>Telefone</th>
-                                    <th>EndereÃ§o</th>
-                                    <th class="actions">AÃ§Ãµes</th>
+                                    <th>Endereço</th>
+                                    <th class="actions">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>

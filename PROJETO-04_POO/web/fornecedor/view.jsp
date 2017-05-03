@@ -49,7 +49,7 @@
 
                             <div class="form-group col-md-4">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" placeholder="(XX) XXXX-XXXX" pattern="^\(?\d{2}\d{4}[-\s]\d{4}$"
+                                <input type="text" placeholder="XXXX-XXXX" pattern="^\(?\d{4}[-\s]\d{4}$"
                                        class="form-control phone" id="telefone" name="telefone">
                             </div>
 

@@ -16,7 +16,8 @@
         String telefone = request.getParameter("telefone");
         String endereco = request.getParameter("endereco");
 
-        Cliente c = new Cliente(id, nome, rg, cpf, email, telefone, endereco);
+        Cliente c = new Cliente(id, nome, cpf, rg, email, telefone, endereco);
+                
 
         Cliente.setListCliente(c);
         

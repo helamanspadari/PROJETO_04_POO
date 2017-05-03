@@ -5,21 +5,30 @@
 <%
     ArrayList<Cliente> listCliente = new ArrayList<>();
 
-    String id = UUID.randomUUID().toString();
+    
 
     try {
-        String nome = request.getParameter("nome");
-        String rg = request.getParameter("rg");
-        String cpf = request.getParameter("cpf");
-        String email = request.getParameter("email");
-        String telefone = request.getParameter("telefone");
-        String endereco = request.getParameter("endereco");
-
-        Cliente c = new Cliente(id, nome, rg, cpf, email, telefone, endereco);
-
-        Cliente.setListCliente(c);
+        String id       = (String)request.getParameter("id");
+        String nome     = (String)request.getParameter("nome");
+        String cpf    = (String)request.getParameter("cpf");
+        String rg     = (String)request.getParameter("rg");
+        String email    = (String)request.getParameter("email");
+        String telefone = (String)request.getParameter("telefone");
+        String endereco = (String)request.getParameter("endereco");
 
         listCliente = Cliente.getListCliente();
+        for(Cliente c : listCliente){
+            if(c.getId().equals(id)){
+                c.setId(id);
+                c.setNome(nome);
+                c.setCpf(cpf);
+                c.setRg(rg);
+                c.setEmail(email);
+                c.setTelefone(telefone);
+                c.setEndereco(endereco);
+                break;
+            }
+        }
         
         response.sendRedirect("view.jsp");
 
@@ -27,5 +36,4 @@
         throw new Exception("Falha ao salvar dados, por favor tente novamente");
     }
 %>
-
        
