@@ -54,16 +54,16 @@
                             </div>
 
                             <div class="form-group col-md-4">
-                                <label for="endereco">Endereço</label>
+                                <label for="endereco">EndereÃ§o</label>
                                 <input type="text" class="form-control" id="endereco" name="endereco">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="rg">RG</label>
-                                <input type="text" placeholder="XXXXXXXXX" pattern="[0-9]{9}" class="form-control" id="nome" name="rg">
+                                <input type="text" placeholder="XXXXXXXXX" pattern="[0-9]{9}" class="form-control" id="rg" name="rg">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="cpf">CPF</label>
-                                <input type="text" placeholder="XXXXXXXXXXX" pattern="[0-9]{11}" class="form-control" id="nome" name="cpf">
+                                <input type="text" placeholder="XXXXXXXXXXX" pattern="[0-9]{11}" class="form-control" id="cpf" name="cpf">
                             </div>
 
 
@@ -91,8 +91,8 @@
                                     <th>Rg</th>
                                     <th>E-mail</th>
                                     <th>Telefone</th>
-                                    <th>Endereço</th>
-                                    <th class="actions">Ações</th>
+                                    <th>EndereÃ§o</th>
+                                    <th class="actions">AÃ§Ãµes</th>
                                 </tr>
                             </thead>
                             <tbody>
